@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
+    <!-- Tags del meta necesarios -->
     <meta charset="utf-8">
-    <meta name "viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Invocar al CSS de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-    <title>Hello Fetch!</title>
+    <title>Hello Fetch</title>
   </head>
   <body>
     <div id="container" class="container mt-3">
       <h1>Hello Fetch</h1>
-      <p>Por favor, ingresá el ID del usuario que querés buscar</p>
+      <p>Ingrese el ID del usuario que desea buscar</p>
+
       <div class="form-group row">
         <div class="col-xs-2 mx-2">
           <input id="userID" placeholder="ID" type="text">
         </div>
         <div class="col-xs-2 mx-2">
           <button type="btn btn-primary" onclick="fetchUser()">Buscar...</button>
+        </div>
+      </div>
+
       <hr>
       <table id="table" class="table table-striped">
-        <thead thead="thead-dark">
+        <thead class="thead-dark">
           <th>ID</th>
           <th>Nombre</th>
           <th>Mail</th>
           <th>Cumpleaños</th>
           <th>DNI</th>
         </thead>
+        <tbody id="tbody">
+        </tbody>
       </table>
       <h3 id="nores"></h3>
     </div>
