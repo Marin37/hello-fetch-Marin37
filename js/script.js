@@ -51,7 +51,7 @@ function fetchUser() {
       let users = [user];  // populateTable necesita un array de objetos como argumento
       // Si tenemos un usuario con id existente lo cargamos en la tabla
       if (users[0] !== null) {
-        // Reemplazar el tbody viejo por uno nuevo con el siguiente usuario que encontremos
+        // Reemplazar el tbody viejo y creamos uno nuevo con el siguiente usuario que encontremos
         let oldTBody = document.getElementById('tbody');
         let newTBody = document.createElement('tbody');
         newTBody.id = 'tbody';
